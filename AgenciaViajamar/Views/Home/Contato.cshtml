@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<main>
+    <div class="container-fluid" style="padding:32px:margin:0 !important;background: #f1f7fc;">
+        <div class="column">
+             <div class="row" style="min-height: calc(100vh - 56px);">    
+                <div class="col-md-6" style="margin: 0 auto;">
+                <section class="contact-clean">
+                    <form asp-controller="Atendimento" asp-action="Create">
+                        <h2 class="text-center">Escreva sua mensagem</h2>
+                        <div class="mb-3"><input class="form-control" type="text" name="nome" placeholder="Nome"></div>
+                        <div class="mb-3"><input class="form-control is-invalid" type="tel" name="telefone" placeholder="Telefone"></div>
+                        <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"></div>
+                        <div class="mb-3"><textarea class="form-control" name="mensagem" placeholder="Messagem" rows="14"></textarea></div>
+                        <div class="mb-3"><button class="btn btn-primary" type="submit">enviar</button></div>
+                    </form>
+                </section>
+            </div>
+        </div></div>
+        
+    </div>
+</main>
+<!--
+<main>
+    <div class="container" style="margin: 71px;width: 845px;height: 165px;">
+        <div class="row">
+            <div class="col-md-6" style="text-align: center;"><img src="" style="height: 269px;margin: 63px;padding: 20px;text-align: center;"></div>
+            <div class="col-md-6">
+                <section class="contact-clean">
+                    <form method="post">
+                        <h2 class="text-center">Escreva sua mensagem</h2>
+                        <div class="mb-3"><input class="form-control" type="text" name="name" placeholder="Nome"></div>
+                        <div class="mb-3"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"></div>
+                        <div class="mb-3"><textarea class="form-control" name="message" placeholder="Messagem" rows="14"></textarea></div>
+                        <div class="mb-3"><button class="btn btn-primary" type="submit">enviar</button></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</main>
+-->

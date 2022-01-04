@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Agência Viajamar</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AgenciaViajamar.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top"><strong>Viajamar</strong></a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Promocoes">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Contato">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="PainelCadastro">&nbsp;&nbsp;&nbsp;&nbsp;Painel de Controle</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    @RenderBody()
+
+    <footer class="footer-dark" style="height: 300;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 item text">
+                    <h3 class="text-center" style="text-shadow: 2px 2px 3px rgba(30,30,30,0.42);color: rgb(247,170,81);font-size: 22px;"><br>Entre em contato conosco<br><br></h3>
+                    <p class="text-center" style="text-shadow: 2px 2px 3px rgba(30,30,30,0.42);border-color: rgb(255,255,255);/*color: rgb(0,0,0);*/"><br>Ligue para:&nbsp;(21)91234-5678<br>Horários de Atendimento:&nbsp;Segunda à Sabado 8h às 19h<br>Email:&nbsp;contato@agenciaviajamar.com.br<br><br></p>
+                </div>
+                <div class="col text-center mx-auto"><img src="~/img/viajamar.png" style="margin: 0 auto;" height="210px"></div>
+            </div>
+            <p class="copyright">Viajamar © 2021</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

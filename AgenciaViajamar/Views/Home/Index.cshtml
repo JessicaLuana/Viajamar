@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+     ViewData["Title"] = "Home Page";
+}
+<figure class="figure"><img class="img-fluid figure-img" src="~/img/65.jpg" style="margin: 0px;"></figure>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><a class="navbar-brand" asp-action="Home"><strong>Viajamar</strong></a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    <li class="nav-item"><a class="nav-link" asp-action="Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Promocoes">Promoções</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Contato">Contato</a></li> 
+                    <li class="nav-item"><a class="nav-link" asp-action="PainelCadastro">&nbsp;&nbsp;&nbsp;&nbsp;<b>Painel de Controle</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+        <div class="carousel-inner"></div>
+        <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+        <ol class="carousel-indicators"></ol>
+    </div>
+    <section class="article-list">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Olá Viajantes!</h2>
+                <p class="text-center"><br>Aqui na Viajamar você encontra os melhores preços para sua viagem. Venha conferir nossos pacotes e promoções.<br><br></p>
+            </div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="~/img/Porto seguro.jpg"></a>
+                    <h3 class="name">Porto Seguro</h3>
+                    <p class="description"><br>Porto Seguro na Bahia é um destino tradicional entre os viajantes de todo o Brasil. A cidade onde o país foi descoberto encanta por suas praias, festas, gastronomia, animação e pelos passeios que oferecem uma enorme gama de possibilidades.<br><br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="~/img/Romeniaa.jpeg"></a>
+                    <h3 class="name">Romênia</h3>
+                    <p class="description"><br>A cultura forte desse povo se faz presente nas construções históricas espalhadas por suas cidades, bem como suas tradições folclóricas, encontradas nas cerâmicas, danças e bordados.<br><br><br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><img class="img-fluid" src="~/img/Campos do jordãoo.jpg"><a href="#"></a>
+                    <h3 class="name">Campos do Jordão</h3>
+                    <p class="description"><br>A arquitetura de inspiração alemã dá um toque alpino à cidade, com florestas de pinheiros que oferecem uma refrescante alternativa ao calor das terras baixas. Com o horizonte repleto de picos verde-esmeralda, Campos do Jordão é um excelente destino nas montanhas localizado nos trópicos.<br><br></p><a class="action" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
