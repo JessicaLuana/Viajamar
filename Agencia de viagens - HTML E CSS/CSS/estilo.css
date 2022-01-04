@@ -1,0 +1,33 @@
+.menu {
+    background-color: black;
+    justify-content: center;
+}
+
+.menu a {
+    color: white;
+    padding: 100px;
+}
+
+.header {
+    background: url("../Imagens/viajamar.png") center;
+}
+
+.rodape {
+    text-align: center;
+}
+
+.meio {
+    text-align: center;
+}
+
+.centro {
+    text-align: center;
+}
+
+#lado {
+    float: right;
+}
+
+.input {
+    width: 400px
+}
